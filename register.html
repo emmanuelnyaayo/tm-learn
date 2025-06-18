@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KU TM Register Page</title>
+        <meta name="author" content="Nuel Nyaayo">
+        <meta name="description" content="A Register Page for KU Toastmasters Membership Website">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body class="back-color">
+        <main class="form-container register-container">
+            <form action="https://httpbin.org/post" method="post">
+                <figure class="logo-figure">
+                    <img src="img/ku_tm_logo.png" alt="KU TM Logo" title="Toastmasters Logo" width="500" height="500" loading="lazy">
+                    <figcaption class="offscreen"> KU TM Logo</figcaption> 
+                </figure>
+                <p class="title nowrap">Enter your Details to Create Account with Us</p>
+                <h1 class="nowrap">Register</h1>
+                <fieldset class="no-border">
+                    <legend class="offscreen">Member Information</legend>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label> <br>
+                        <input class="no-border rounded-corners" type="text" name="firstName" id="firstName" placeholder="Enter your first name" pattern="^[a-zA-Z]{3,}$" title="Please enter in more than 3 letters" autofocus autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label> <br>
+                        <input class="no-border rounded-corners" type="text" name="lastName" id="lastName" placeholder="Enter your last name" pattern="^[a-zA-Z]{3,}$" title="Please enter in more than 3 letters" autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="corporateEmail">Student Corporate Email</label> <br>
+                        <input class="no-border rounded-corners" type="email" name="corporateEmail" id="corporateEmail" placeholder="Enter your corporate email" pattern="^\d{4,}\.\d{4}@students\.ku\.ac\.ke$" title="Please enter a valid KU corporate email" autocomplete="on" required>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="phone">Phone Number</label> <br>
+                        <input class="no-border rounded-corners" type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="^(\+254|0)7\d{8}$" autocomplete="on" required>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label> <br>
+                        <div class="phone-container no-border rounded-corners">
+                            <select class="country-codes rounded-corners no-border" name="country-code" id="country-code">
+                                <option value="kenya" selected>+254</option>
+                                <option value="tanzania">+255</option>
+                                <option value="uganda">+256</option>
+                            </select> 
+                            <input class="phone-input rounded-corners no-border" type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="^\d{9}$" title="Please enter your phone number without the country code portion" autocomplete="on" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="registrationNumber">Student Registration Number</label> <br>
+                        <input class="no-border rounded-corners" type="text" name="registrationNumber" id="registrationNumber" placeholder="Enter your registration number" pattern="^[A-Z]{1}[0-9]{2,3}S?/[0-9]{4,5}/[0-9]{4}$" autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Select Date of Birth</label> <br>
+                        <input class="no-border rounded-corners" type="date" name="dob" id="dob" autocomplete="on" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="password-container">
+                            <label for="userPassword">Password</label> <br>
+                            <input class="no-border rounded-corners" type="password" name="userPassword" id="userPassword" placeholder="Enter your password" pattern="^.{8,}$" title="Please enter a minimum of 8 characters" autocomplete="on" required>
+                            <i class="fa-solid fa-eye-slash register-positioning"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="password-container">
+                            <label for="confirmPassword">Confirm Password</label> <br>
+                            <input class="no-border rounded-corners" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password" pattern="^.{8,}$" title="Please enter a minimum of 8 characters" autocomplete="on" required>
+                            <i class="fa-solid fa-eye-slash register-positioning"></i>
+                        </div>
+                    </div>
+                    <div class="checkbox-area">
+                        <input class="no-border" type="checkbox" name="agreeToTerms" id="agreeToTerms" value="agreeToTerms" checked>
+                        <label class="check-label" for="agreeToTerms">By clicking <strong>Sign Up</strong> you agree to KU Toastmasters Terms of <span class="spacer"></span>Conditions & Privacy Policy</label>
+                    </div>
+                
+                </fieldset>
+
+                <button class="submit-btn no-border rounded-corners" type="submit">Sign Up</button>
+
+                <p class="title">Already have an account? <a href="login.html" title="login into your account">Login</a></p>
+
+            </form>
+        </main>
+    </body>
+</html>

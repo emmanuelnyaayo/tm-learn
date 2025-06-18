@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KU TM Login Page</title>
+        <meta name="author" content="Nuel Nyaayo">
+        <meta name="description" content="A Login Page for KU Toastmasters Membership Website">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body class="back-color center">
+        <main class="form-container login-container">
+            <form action="index.html" method="get">
+                <figure class="logo-figure">
+                    <img src="img/ku_tm_logo.png" alt="KU TM Logo" title="Toastmasters Logo" width="500" height="500" loading="lazy">
+                    <figcaption class="offscreen"> KU TM Logo</figcaption> 
+                </figure>
+                <p class="title nowrap">Welcome Back to KU Toastmasters</p>
+                <h1 class="nowrap">Login</h1>
+                <fieldset class="no-border">
+                    <legend class="offscreen">Login Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label> <br>
+                        <input class="no-border rounded-corners" type="email" name="email" id="email" placeholder="Enter your email" pattern="^\d{4,}\.\d{4}@students\.ku\.ac\.ke$" title="Please enter a valid KU corporate email" autocomplete="on" autofocus required>
+                    </div>
+                    <div class="form-group">
+                        <div class="password-container">
+                            <label for="password">Password</label> <br>
+                            <input class="no-border rounded-corners" type="password" name="password" id="password" placeholder="Enter your password" pattern="^.{8,}$" title="Please enter a minimum of 8 characters" required>
+                            <i class="fa-solid fa-eye-slash login-positioning"></i>
+                        </div>
+                    </div>
+                    <div class="checkbox-area">
+                        <input class="no-border" type="checkbox" name="rememberMe" id="rememberMe" value="rememberMe" checked>
+                        <label class="check-label" for="rememberMe">Remember Me</label>
+                    </div>
+                
+                </fieldset>
+
+                <button class="submit-btn no-border rounded-corners" type="submit">Sign In</button>
+
+                <p class="title">Forgot Password? <a href="#" title="reset your password">Reset</a></p>
+                <p class="title">New to Toastmasters? <a href="register.html" title="create an account">Register</a></p>
+
+            </form>
+        </main>
+    </body>
+</html>

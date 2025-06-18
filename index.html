@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KU TM Dashboard</title>
+        <meta name="author" content="Nuel Nyaayo">
+        <meta name="description" content="A Dashboard Page for KU Toastmasters Membership Website">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body class="grid">
+        <header class="header">
+            <nav class="rounded-corners">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Meeting</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Elections</a></li>
+                </ul>
+                <div class="notification-area">
+                    <span><i class="fa-regular fa-bell"><span class="notification-count">3</span></i></span>
+                    <button class="no-border">Notifications</button>
+                </div>
+                
+            </nav>
+            <div class="breadcrumb rounded-corners">
+                <p><span class="breadcrumb-spacer"></span> Club Member &nbsp; <span><i class="fa-solid fa-play"></i></span> &nbsp; Home &sol; <a href="#">Dashboard</a></p>
+                <div class="search-area">
+                    <input class="rounded-corners no-border" type="search" name="search" id="search" placeholder="Search Here">
+                    <button class="no-border"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                </div>
+            </div>
+        </header>
+        <aside class="sidebar rounded-corners">
+            <header class="aside-header">
+                <figure class="tm-logo">
+                    <img src="img/ku_tm_logo.png" alt="KU TM Logo" title="Toastmasters Logo" width="500" height="500">
+                    <figcaption class="offscreen">KU TM Logo</figcaption>
+                </figure>
+                <h1 class="nowrap">Club Member</h1>
+                <section class="user-profile">
+                    <div class="profile-pic">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="profile-info">
+                        <h2 class="nowrap">Nuel Nyaayo</h2>
+                        <p class="member-no rounded-corners">member no &#8209; 001</p>
+                    </div>
+                </section>
+            </header>
+
+            <ul class="side-list">
+                <li><a href="#" class="rounded-corners">My Profile</a></li>
+                <li>
+                    <a href="#" class="rounded-corners">Settings&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                        <!-- <ul>
+                            <li>Account Settings</li>
+                            <li>General Settings</li>
+                        </ul> -->
+                    </a>
+                </li>
+                <li><a href="#" class="rounded-corners">Contact Us</a></li>
+                <li>
+                    <a href="#" class="rounded-corners">Support&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                        <!-- <ul>
+                            <li>Learn More</li>
+                            <li>Help</li>
+                        </ul> -->
+                    </a>
+                </li>
+            </ul>
+
+            <details>
+                <summary><strong>KU Toastmasters Version 1.1.0</strong></summary>
+                <p>Inc, Toastmasters International, <br>&copy; Copyright 2025</p>
+            </details>
+
+            <footer>
+                <ul>
+                    <li><a href="login.html" class="rounded-corners">Log Out</a></li>
+                </ul>
+            </footer>
+
+        </aside>
+        <main class="dashboard">
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">Welcome Back, Nuel!</h3>
+                <p>This is a personalized KU Toastmasters Membership Dashboard made for you.</p>
+            </section>
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">Dashboard Overview</h3>
+            </section>
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">Quick Action Links</h3>
+                <div class="nested-btns">
+                    <button class="action-btn no-border rounded-corners">Sign Up for a Role</button>
+                    <button class="action-btn no-border rounded-corners">Make a Payment</button>
+                    <button class="action-btn no-border rounded-corners">View Resources</button>
+                </div>
+            </section>
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">Meetings Summary</h3>
+            </section>
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">My Roles Summary</h3>
+            </section>
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">Notification Updates</h3>
+            </section>
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">Payment History</h3>
+            </section>
+            <section class="cards rounded-corners">
+                <h3 class="nowrap">Voting and Election</h3>
+            </section>
+        </main>
+    </body>
+</html>
